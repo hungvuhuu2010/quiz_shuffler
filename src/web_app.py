@@ -34,7 +34,7 @@ def main():
     num_versions = st.sidebar.number_input(
         "Số lượng mã đề cần tạo:",
         min_value=1,
-        max_value=20,
+        max_value=24,
         value=4,
         step=1
     )
