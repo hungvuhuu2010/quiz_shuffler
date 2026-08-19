@@ -1,4 +1,7 @@
-"""
+import sys
+from pathlib import Path
+
+WEB_APP_PY = '''"""
 Streamlit Web Application for Quiz Shuffler.
 Provides an interactive online UI to upload .docx exams, configure shuffling rules,
 and download shuffled exam variants packaged in a zip archive.
@@ -112,6 +115,16 @@ def main():
         * **`<??>`**: **Xáo trộn** vị trí chùm, **xáo trộn** thứ tự câu bên trong chùm.
         * **Câu đơn không có marker**: Được xử lý độc lập và xáo trộn vị trí linh hoạt.
         """)
+
+if __name__ == "__main__":
+    main()
+'''
+
+def main():
+    root_dir = Path.cwd().resolve()
+    web_file = root_dir / "src" / "web_app.py"
+    web_file.write_text(WEB_APP_PY, encoding="utf-8")
+    print(f"[SUCCESS] Updated {web_file} with Streamlit Cloud import paths.")
 
 if __name__ == "__main__":
     main()
