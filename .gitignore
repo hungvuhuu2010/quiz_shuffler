@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/
+*.bak
+output/
+*.zip
+*.docx
+!test_*.docx
