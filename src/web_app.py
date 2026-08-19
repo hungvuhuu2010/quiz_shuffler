@@ -25,7 +25,7 @@ st.set_page_config(
 )
 
 def main():
-    st.title("📝 QUIZ SHUFFLER ONLINE")
+    st.title("📝 PHẦN MỀM TRỘN ĐỀ TRỰC TUYẾN")
     st.caption("Hệ thống trộn đề trắc nghiệm DOCX bảo toàn cấu trúc XML, Bảng, Hình ảnh và Công thức OMML")
 
     st.markdown("---")
@@ -34,9 +34,9 @@ def main():
     num_versions = st.sidebar.number_input(
         "Số lượng mã đề cần tạo:",
         min_value=1,
-        max_value=24,
+        max_value=8,
         value=4,
-        step=1
+        step=2
     )
 
     use_seed = st.sidebar.checkbox("Cố định Seed ngẫu nhiên (Tái lập kết quả)")
