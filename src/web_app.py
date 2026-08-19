@@ -19,7 +19,7 @@ import tempfile
 from src.file_adapter import DocxFileAdapter
 
 st.set_page_config(
-    page_title="Quiz Shuffler - Trộn Đề Trắc Nghiệm DOCX",
+    page_title="Trộn Đề Trắc Nghiệm DOCX",
     page_icon="📝",
     layout="centered"
 )
